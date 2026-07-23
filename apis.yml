@@ -1,8 +1,27 @@
 aid: autolotto
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/autolotto.png
 name: AutoLotto
-description: AutoLotto is a company surfaced as a portfolio company of 500-global, pantera-capital and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  AutoLotto, Inc. operates Lottery.com, a mobile platform that lets users in participating US
+  states play official draw lottery games such as Powerball and Mega Millions from their phones,
+  track tickets, view winning numbers, jackpot sizes and draw times, and collect winnings to a
+  linked bank account. Beyond the consumer app, AutoLotto runs a business data-licensing offering
+  that syndicates results and draw data for hundreds of lottery games worldwide to partner digital
+  properties. AutoLotto is venture-backed (500 Global, Pantera Capital) and its parent trades
+  publicly. As of this enrichment pass Lottery.com exposes no public developer API, OpenAPI
+  specification, SDKs, or self-service developer portal; data access is arranged through a manual
+  "license our data" inquiry form rather than a programmatic surface.
 url: https://raw.githubusercontent.com/api-evangelist/autolotto/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Lottery
+- Gaming
+- Consumer
+- Mobile
+- Data Licensing
+- Entertainment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/autolotto-domain-security.yml
 - type: Website
   url: https://lottery.com
+- type: TermsOfService
+  url: https://lottery.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://lottery.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
